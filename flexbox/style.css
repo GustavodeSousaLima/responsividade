@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. Com content-box , ao definir width: 100px , o interior (conteúdo) do elemento terá 100px, mas por termos padding-left: 50px , o tamanho total do elemento será 150px.*/
+
+    
+}
+
+.container{
+    background-color: aquamarine;
+    min-height: 100vh; /*viewport height*/
+    display: flex;
+    flex-direction: row;/*allinhamento dos items*/
+    row-gap: 20px; /*espaço entre as linhas*/
+    column-gap:20px; /*espaço entre as colunas*/
+    gap: 50px; /*espaçamento nas duas direções*/
+    gap: 0px 15px; /*linha e coluna*/
+    justify-content: center; /*quando a direção está como linha, ele faz o alinhamento na horizontal. Quando está como couluna ele faz o alinhamento na vertical.(center, start, end, space-around, space-between, space-evenly)*/
+    align-items: center;/*quando a direção está como linha, ele faz o alinhamento na vertical. Quando está como couluna ele faz o alinhamento na horizontal.(center, start, end, space-around, space-between, space-evenly)*/
+    flex-wrap: nowrap;/*quebra de linha*/
+    }
+
+    .item{
+        width: 200px;
+        height: 200px;border: 2px solid black;
+        background-color: white;
+        font-size: 20px;/*tamanho da fonte*/
+        text-align: center;/*alinhamento do texto*/
+        line-height: 200px;/*altura da linha*/
+    }
